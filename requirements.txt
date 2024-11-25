@@ -1,0 +1,5 @@
+azure-functions
+azure-storage-blob
+openai
+requests
+pillow  # For image processing in case it's used for the input images
