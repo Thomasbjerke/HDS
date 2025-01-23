@@ -86,7 +86,7 @@ class AskAI:
 
 # Example usage
 if __name__ == "__main__":
-    openai_api_key = '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'
+    openai_api_key = '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'
     phi_api_key = 'hdTsphcX6deWaETLURkdfejyqAClfrZU'
     phi_api_endpoint = 'https://Phi-3-5-vision-instruct-ulhdg.swedencentral.models.ai.azure.com/v1/chat/completions'
     image_url = 'https://smllighting.no/wp-content/uploads/2020/12/DSC0218-Edit.jpg'
@@ -94,14 +94,17 @@ if __name__ == "__main__":
     AskAI = AskAI(openai_api_key, phi_api_key, phi_api_endpoint)
 
     # Get list of hotels
-    #print(AskAI.get_list_of_hotels("Norway"))
+    print(AskAI.get_list_of_hotels("Norway", []))
 
     # Check if the image shows an exterior
-    test = AskAI.check_if_exterior(image_url)
-    if str(test).strip() == "Yes":
-        print("Yes")
+    #test = AskAI.check_if_exterior(image_url)
+    #if str(test).strip() == "Yes":
+    #    print("Yes")
 
-    else:
-        print("Nei: ", str(test))
+    #else:
+    #    print("Nei: ", str(test))
 
     #print(AskAI.get_email_address("Hotel Brosundet"))
+
+
+

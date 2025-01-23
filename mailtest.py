@@ -24,4 +24,4 @@ def send_email(subject, body, to_email):
         print("Error sending email:", e)
 
 # Usage
-send_email("Test Subject", "This is the email body", "thomas.bjerke@hotmail.com")
+send_email("Prøver ny måte å sende mail", "Hei Thomas. Jeg prøver å sende mail programmatisk. Funker det?", "thomas.bjerke@hotmail.com")
